@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addItem, toggleItem, deleteItem } from "../actions/index.js";
 import Button from "react-bootstrap/Button";
-import "../index.scss";
+
+import "bootstrap/dist/css/bootstrap.min.css";
 
 // logic for rendering TodoList
 export const MainView = () => {
@@ -47,7 +48,7 @@ export const MainView = () => {
 
   // renders TodoList
   return (
-    <div variant="secondary">
+    <div className="m-3" variant="secondary">
       <h1>Todo List:</h1>
       <input
         type="text"
@@ -55,10 +56,10 @@ export const MainView = () => {
         onChange={handleInputChange}
         onKeyDown={handleKeyDown}
       />
-      <Button variant="primary" onClick={handleAddItem}>
+      <Button className="m-3" variant="outline-primary" onClick={handleAddItem}>
         Add Item:
       </Button>
-      <ul>
+      <ul style={{ listStyleType: "none" }}>
         {todos.map((todo) => (
           <li
             key={todo.id}
@@ -66,7 +67,13 @@ export const MainView = () => {
             onDoubleClick={() => handleToggleItem(todo.id)}
           >
             {todo.text}
-            <span onClick={() => handleDeleteItem(todo.id)}> X</span>
+            <Button
+              className="m-3"
+              variant="outline-secondary"
+              onClick={() => handleDeleteItem(todo.id)}
+            >
+              X{" "}
+            </Button>
           </li>
         ))}
       </ul>

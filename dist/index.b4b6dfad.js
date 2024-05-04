@@ -27175,7 +27175,7 @@ var _reactRedux = require("react-redux");
 var _indexJs = require("../actions/index.js");
 var _button = require("react-bootstrap/Button");
 var _buttonDefault = parcelHelpers.interopDefault(_button);
-var _indexScss = require("../index.scss");
+var _bootstrapMinCss = require("bootstrap/dist/css/bootstrap.min.css");
 var _s = $RefreshSig$();
 const MainView = ()=>{
     _s();
@@ -27210,13 +27210,14 @@ const MainView = ()=>{
     };
     // renders TodoList
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "m-3",
         variant: "secondary",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "Todo List:"
             }, void 0, false, {
                 fileName: "src/components/mainview.jsx",
-                lineNumber: 51,
+                lineNumber: 52,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -27226,47 +27227,56 @@ const MainView = ()=>{
                 onKeyDown: handleKeyDown
             }, void 0, false, {
                 fileName: "src/components/mainview.jsx",
-                lineNumber: 52,
+                lineNumber: 53,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonDefault.default), {
-                variant: "primary",
+                className: "m-3",
+                variant: "outline-primary",
                 onClick: handleAddItem,
                 children: "Add Item:"
             }, void 0, false, {
                 fileName: "src/components/mainview.jsx",
-                lineNumber: 58,
+                lineNumber: 59,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                style: {
+                    listStyleType: "none"
+                },
                 children: todos.map((todo)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         className: todo.completed ? "strike" : "",
                         onDoubleClick: ()=>handleToggleItem(todo.id),
                         children: [
                             todo.text,
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonDefault.default), {
+                                className: "m-3",
+                                variant: "outline-secondary",
                                 onClick: ()=>handleDeleteItem(todo.id),
-                                children: " X"
-                            }, void 0, false, {
+                                children: [
+                                    "X",
+                                    " "
+                                ]
+                            }, void 0, true, {
                                 fileName: "src/components/mainview.jsx",
-                                lineNumber: 69,
+                                lineNumber: 70,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, todo.id, true, {
                         fileName: "src/components/mainview.jsx",
-                        lineNumber: 63,
+                        lineNumber: 64,
                         columnNumber: 11
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/mainview.jsx",
-                lineNumber: 61,
+                lineNumber: 62,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/mainview.jsx",
-        lineNumber: 50,
+        lineNumber: 51,
         columnNumber: 5
     }, undefined);
 };
@@ -27285,7 +27295,7 @@ $RefreshReg$(_c, "MainView");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-redux":"62sf7","../actions/index.js":"cUdES","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-bootstrap/Button":"aPzUt","../index.scss":"lJZlQ"}],"62sf7":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-redux":"62sf7","../actions/index.js":"cUdES","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-bootstrap/Button":"aPzUt","bootstrap/dist/css/bootstrap.min.css":"i5LP7"}],"62sf7":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Provider", ()=>Provider_default);
@@ -29646,7 +29656,7 @@ function createBootstrapComponent(Component, opts) {
 }
 exports.default = ThemeProvider;
 
-},{"react":"21dqq","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lJZlQ":[function() {},{}],"d8qyu":[function(require,module,exports) {
+},{"react":"21dqq","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"i5LP7":[function() {},{}],"d8qyu":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _redux = require("redux");
