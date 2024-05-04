@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addItem, toggleItem, deleteItem } from "../actions/index.js";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -48,35 +51,44 @@ export const MainView = () => {
 
   // renders TodoList
   return (
-    <div className="m-3" variant="secondary">
-      <h1>Todo List:</h1>
-      <input
-        type="text"
-        value={inputValue}
-        onChange={handleInputChange}
-        onKeyDown={handleKeyDown}
-      />
-      <Button className="m-3" variant="outline-primary" onClick={handleAddItem}>
-        Add Item:
-      </Button>
-      <ul style={{ listStyleType: "none" }}>
-        {todos.map((todo) => (
-          <li
-            key={todo.id}
-            className={todo.completed ? "strike" : ""}
-            onDoubleClick={() => handleToggleItem(todo.id)}
+    <Container>
+      <Row className="justify-content-md-center">
+        <Col className="m-3" variant="secondary">
+          <h2>Todo List:</h2>
+          <input
+            type="text"
+            value={inputValue}
+            onChange={handleInputChange}
+            onKeyDown={handleKeyDown}
+          />
+          <Button
+            className="m-3"
+            variant="outline-primary"
+            onClick={handleAddItem}
           >
-            {todo.text}
-            <Button
-              className="m-3"
-              variant="outline-secondary"
-              onClick={() => handleDeleteItem(todo.id)}
-            >
-              X{" "}
-            </Button>
-          </li>
-        ))}
-      </ul>
-    </div>
+            Add Item:
+          </Button>
+          <ul style={{ listStyleType: "none" }}>
+            {todos.map((todo) => (
+              <li
+                key={todo.id}
+                className={todo.completed ? "strike" : ""}
+                onDoubleClick={() => handleToggleItem(todo.id)}
+              >
+                {todo.text}
+                <Button
+                  className="m-3"
+                  variant="outline-secondary"
+                  onClick={() => handleDeleteItem(todo.id)}
+                >
+                  X{" "}
+                </Button>
+              </li>
+            ))}
+          </ul>
+          <h6>Designed and Developed by: Leanne Duyck</h6>
+        </Col>
+      </Row>
+    </Container>
   );
 };
