@@ -5,6 +5,7 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "@mui/base": "^5.0.0-beta.40",
     "parcel": "^2.0.0-beta.3",
     "react": "18.2.0",
     "react-bootstrap": "2.10.2",
