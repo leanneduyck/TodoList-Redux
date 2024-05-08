@@ -7,7 +7,7 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../../main-view.css";
+import "./main-view.css";
 
 // logic for rendering TodoList
 export const MainView = () => {
