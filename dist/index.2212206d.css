@@ -13331,4 +13331,13 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+.container {
+  justify-content: center;
+  display: flex;
+}
+
+h6 {
+  text-align: center;
+}
 /*# sourceMappingURL=index.2212206d.css.map */

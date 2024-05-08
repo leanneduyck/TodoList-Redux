@@ -1,16 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import { MainView } from "./components/mainview.jsx";
+import { MainView } from "./components/main-view.jsx";
 import store from "./store.js";
-import "./index.scss";
 
 // renders MainView (TodoList)
 // wrapped in Provider, kept getting errors from the store w/Container
 const App = () => {
   return (
     <Provider store={store}>
-      <MainView />
+      <MainView class="main-view" />
     </Provider>
   );
 };

@@ -7,6 +7,7 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../../main-view.css";
 
 // logic for rendering TodoList
 export const MainView = () => {
@@ -51,8 +52,11 @@ export const MainView = () => {
 
   // renders TodoList
   return (
-    <Container>
-      <Row className="justify-content-md-center">
+    <Container
+      className="bg-light d-flex flex-column align-items-center justify-content-center"
+      style={{ minHeight: "80vh", maxWidth: "60vh" }}
+    >
+      <Row>
         <Col className="m-3" variant="secondary">
           <h2>Todo List:</h2>
           <input
@@ -86,9 +90,9 @@ export const MainView = () => {
               </li>
             ))}
           </ul>
-          <h6>Designed and Developed by: Leanne Duyck</h6>
         </Col>
       </Row>
+      <h6 className="mt-auto mb-3">designed and developed by: Leanne Duyck</h6>
     </Container>
   );
 };

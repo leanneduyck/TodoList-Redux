@@ -1,0 +1,8 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+h6 {
+  text-align: center;
+}
