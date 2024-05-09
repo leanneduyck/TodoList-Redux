@@ -39,3 +39,4 @@
      <li>"@babel/runtime": "7.13.8"</li>
      <li>"typescript": "4.1.3"</li>
   </ul>
+  <p>Website: https://leanneduyck.github.io/todo-app-redux/</p>
