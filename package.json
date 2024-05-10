@@ -2,6 +2,7 @@
   "name": "37-redux-to-do-app-starting-repo",
   "version": "1.0.0",
   "description": "a todo list app built using React and Redux",
+  "homepage": "leanneduyck.github.io/todo-app-redux/",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
