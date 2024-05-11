@@ -1,8 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { Provider } from "react-redux";
-import { MainView } from "./components/main-view.jsx";
-import store from "./store.js";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import MainView from './components/main-view.jsx';
+import store from './store.js';
 
 // renders MainView (TodoList)
 // wrapped in Provider, kept getting errors from the store w/Container
@@ -14,4 +14,4 @@ const App = () => {
   );
 };
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById('root'));

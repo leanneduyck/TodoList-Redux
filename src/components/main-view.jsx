@@ -10,7 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./main-view.css";
 
 // logic for rendering TodoList
-export const MainView = () => {
+export default MainView = () => {
   // local state for input value
   const [inputValue, setInputValue] = useState("");
   // dispatch function to dispatch actions
