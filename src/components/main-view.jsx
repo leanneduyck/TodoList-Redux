@@ -10,7 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./main-view.css";
 
 // logic for rendering TodoList
-export default MainView = () => {
+const MainView = () => {
   // local state for input value
   const [inputValue, setInputValue] = useState("");
   // dispatch function to dispatch actions
@@ -53,7 +53,7 @@ export default MainView = () => {
   // renders TodoList
   return (
     <Container
-      className="bg-light d-flex flex-column align-items-center justify-content-center"
+      className="bg-light d-flex flex-column align-items-center justify-content-center mt-3"
       style={{ minHeight: "80vh", maxWidth: "60vh" }}
     >
       <Row>
@@ -96,3 +96,5 @@ export default MainView = () => {
     </Container>
   );
 };
+
+export default MainView;

@@ -28291,7 +28291,7 @@ var _bootstrapMinCss = require("bootstrap/dist/css/bootstrap.min.css");
 var _mainViewCss = require("./main-view.css");
 var _s = $RefreshSig$();
 // logic for rendering TodoList
-exports.default = MainView = _s(()=>{
+const MainView = ()=>{
     _s();
     // local state for input value
     const [inputValue, setInputValue] = (0, _react.useState)("");
@@ -28324,7 +28324,7 @@ exports.default = MainView = _s(()=>{
     };
     // renders TodoList
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _containerDefault.default), {
-        className: "bg-light d-flex flex-column align-items-center justify-content-center",
+        className: "bg-light d-flex flex-column align-items-center justify-content-center mt-3",
         style: {
             minHeight: "80vh",
             maxWidth: "60vh"
@@ -28420,12 +28420,17 @@ exports.default = MainView = _s(()=>{
         lineNumber: 55,
         columnNumber: 5
     }, undefined);
-}, "lIsFIbFudJK5/xYTrEu+SLp+8mA=", false, function() {
+};
+_s(MainView, "lIsFIbFudJK5/xYTrEu+SLp+8mA=", false, function() {
     return [
         (0, _reactRedux.useDispatch),
         (0, _reactRedux.useSelector)
     ];
 });
+_c = MainView;
+exports.default = MainView;
+var _c;
+$RefreshReg$(_c, "MainView");
 
   $parcel$ReactRefreshHelpers$4f22.postlude(module);
 } finally {
