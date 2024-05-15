@@ -4,6 +4,7 @@
 <p>The UI is built using Bootstrap-React.</p>
 <p>The Master Branch is the set as default.</p>
 <p>This app is hosted on Netlify.</p>
+<p>Website: https://to-do-list-redux-app.netlify.app/</p>
 
 <p>Techs Used:</p>
    <ul>
@@ -43,4 +44,3 @@
      <li>"typescript": "4.1.3"</li>
      <li>"process": "^0.11.10"</li>
   </ul>
-<p>Website: https://to-do-list-redux-app.netlify.app/</p>
