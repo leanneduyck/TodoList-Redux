@@ -40,5 +40,5 @@
      <li>"@babel/runtime": "7.13.8"</li>
      <li>"@parcel/transformer-sass": "^2.12.0"</li>
      <li>"typescript": "4.1.3"</li>
-     <li>"typescript": "4.1.3"</li>
+     <li>"process": "^0.11.10"</li>
   </ul>
