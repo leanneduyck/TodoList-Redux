@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "a todo list app built using React and Redux",
   "keywords": [],
-  "main": "src/index.js",
   "dependencies": {
     "bootstrap": "^5.3.3",
     "parcel": "^2.12.0",
