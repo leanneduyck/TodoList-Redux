@@ -2,6 +2,7 @@
 <p>It allows the user to add, toggle, and delete items from a list; the user is able to click the button or hit the enter key to submit.</p>
 <p>MainView is the only view, Actions are created in "actions/index.js", Reducers are defined and stored in "reducers/index.js" and "store.js".</p>
 <p>The UI is built using Bootstrap-React.</p>
+<p>The Master Branch is the set as default.</p>
 
 <p>Techs Used:</p>
    <ul>
@@ -37,5 +38,7 @@
   <p>devDependencies:</p>
   <ul>
      <li>"@babel/runtime": "7.13.8"</li>
+     <li>"@parcel/transformer-sass": "^2.12.0"</li>
+     <li>"typescript": "4.1.3"</li>
      <li>"typescript": "4.1.3"</li>
   </ul>
