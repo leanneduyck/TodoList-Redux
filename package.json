@@ -5,12 +5,21 @@
   "homepage": "leanneduyck.github.io/todo-app-redux/",
   "keywords": [],
   "dependencies": {
+<<<<<<< Updated upstream
     "bootstrap": "5.3.3",
+=======
+    "bootstrap": "^5.3.3",
+>>>>>>> Stashed changes
     "parcel": "^2.0.0-beta.3",
     "react": "18.2.0",
     "react-bootstrap": "2.10.2",
     "react-dom": "18.2.0",
+<<<<<<< Updated upstream
     "react-redux": "^9.1.2",
+=======
+    "react-redux": "9.1.2",
+    "redux": "4.1.2",
+>>>>>>> Stashed changes
     "src": "1.1.2"
   },
   "devDependencies": {
