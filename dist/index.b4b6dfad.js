@@ -28323,7 +28323,7 @@ const MainView = ()=>{
     };
     // renders TodoList
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _containerDefault.default), {
-        className: "bg-light d-flex flex-column align-items-center justify-content-center",
+        className: "bg-light d-flex flex-column align-items-center justify-content-center mt-3",
         style: {
             minHeight: "80vh",
             maxWidth: "60vh"
