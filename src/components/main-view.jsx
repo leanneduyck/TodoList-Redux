@@ -92,7 +92,15 @@ export const MainView = () => {
           </ul>
         </Col>
       </Row>
-      <h6 className="mt-auto mb-3">designed and developed by: Leanne Duyck</h6>
+      <p className="mt-auto mb-3">
+        Designed and developed by:{" "}
+        <a
+          href="https://leanneduyck.github.io/portfolio-website/index.html"
+          target="_blank"
+        >
+          Leanne Duyck
+        </a>
+      </p>
     </Container>
   );
 };

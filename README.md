@@ -27,5 +27,5 @@ Setup Instructions/Commands:
 4. Install Parcel: Globally install Parcel with sudo npm install -g parcel.
 5. Install Dependencies: Install React, React DOM, React Redux, and React 6. Bootstrap with npm install --save react react-dom react-redux react-bootstrap.
 6. Configure Index.html: Link index.html to index.jsx for application entry point.
-7. Build Project: Use Parcel to build the project with parcel src/index.html.
+7. Build Project: Use Parcel to build the project: parcel src/index.html.
 8. Deploy to Netlify: Deploy automatically to Netlify using Parcel, ensuring updates reflect live.

@@ -28405,10 +28405,22 @@ const MainView = ()=>{
                 lineNumber: 59,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h6", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 className: "mt-auto mb-3",
-                children: "designed and developed by: Leanne Duyck"
-            }, void 0, false, {
+                children: [
+                    "Designed and developed by:",
+                    " ",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: "https://leanneduyck.github.io/portfolio-website/index.html",
+                        target: "_blank",
+                        children: "Leanne Duyck"
+                    }, void 0, false, {
+                        fileName: "src/components/main-view.jsx",
+                        lineNumber: 97,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "src/components/main-view.jsx",
                 lineNumber: 95,
                 columnNumber: 7
