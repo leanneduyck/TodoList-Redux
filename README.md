@@ -1,48 +1,31 @@
-<p>I rebuilt my JS todo-list-app using React and Redux.</p>
-<p>It allows the user to add, toggle, and delete items from a list; the user is able to click the button or hit the enter key to submit.</p>
-<p>MainView is the only view, Actions are created in "actions/index.js", Reducers are defined and stored in "reducers/index.js" and "store.js".</p>
-<p>The UI is built using Bootstrap-React.</p>
-<p>The Master Branch is the set as default.</p>
-<p>This app is hosted on Netlify.</p>
-<p>Website: https://to-do-list-redux-app.netlify.app/</p>
+Overview:
+This is a ReactJS application rebuilt from a previous JavaScript todo-list-app, now incorporating Redux for state management. The application leverages ReactJS with Redux for enhanced state management, ensuring a seamless user experience. It enables users to manage their todo list by adding, toggling, and deleting items. Actions are managed through actions/index.js, reducers are defined in reducers/index.js, and the store configuration is handled in store.js.
 
-<p>Techs Used:</p>
-   <ul>
-     <li>ReactJS</li>
-     <li>Parcel</li>          
-   </ul>
-<p>Setup Instructions/Commands:</p>
-  <ul>
-    <li>Check Node is Installed: "node -v"</li>
-    <li>Initialize "package.json" file: inside project folder, "npm init"
-      <p>- remove "main: index.js"</p></li>
-    <li>.gitignore: add "node_modules", ".cache", ".parcel-cache"</li>
-    <li>Install Parcel (global): inside project folder, "sudo npm install -g parcel"</li>
-    <li>Install Packages+Dependencies: inside project folder, "npm install --save react react-dom"</li>
-    <li>Link to "index.html" file: 
-        <li>-body</li>
-          <li>---div id="root"</div></li>
-          <li>---script type="module" src="index.jsx"/script</li>
-        <li>-/body</li>
-        </li>
-    <li>Parcel to Build Project (creates "dist" folder): inside project folder, "parcel src/index.html" (command also used to deploy app every time)</li>
-        <li>(In deployment on Netlify, needs command "parcel build src/index.html"; will automatically update live site w/o manually pushing changes to Netlify.)</li>
+Key Features:
 
-  </ul>
-  <p>Dependencies:</p>
-  <ul>
-     <li>"parcel": "^2.12.0"</li>
-     <li>"react": "^18.2.0"</li>
-     <li>"react-dom": "^18.2.0"</li>
-     <li>"react-bootstrap": "^2.10.2"</li>
-    <li>"bootstrap": "^5.3.3"</li>
-    <li>"react-redux": "9.1.2"</li>
-<li>"src": "1.1.2"</li>
-  </ul>
-  <p>devDependencies:</p>
-  <ul>
-     <li>"@babel/runtime": "7.13.8"</li>
-     <li>"@parcel/transformer-sass": "^2.12.0"</li>
-     <li>"typescript": "4.1.3"</li>
-     <li>"process": "^0.11.10"</li>
-  </ul>
+1. Add, Toggle, Delete: Users can add new items to the todo list, mark items as completed, and delete items as needed.
+2. Keyboard Input: Supports adding new todo items by hitting the enter key after typing.
+3. Redux State Management: Utilizes Redux for centralized state management, separating actions and reducers for predictable state updates.
+4. Bootstrap-React UI: Built using Bootstrap-React components for a responsive and intuitive user interface.
+5. Single View: MainView displays the entire todo list; users interact directly within this view.
+
+Website: https://to-do-list-redux-app.netlify.app/
+
+Technologies Used:
+
+1. ReactJS: Frontend library for building user interfaces.
+2. Redux: State management library for predictable state container.
+3. Parcel: Bundler for packaging the application code.
+4. React Bootstrap: UI framework for responsive design components.
+5. Netlify: Platform for continuous deployment and hosting.
+
+Setup Instructions/Commands:
+
+1. Check Node.js Installation: Ensure Node.js is installed using node -v.
+2. Initialize Project: Create a package.json file in the project folder with npm init. Remove "main": "index.js" from the package.json file.
+3. Set up .gitignore: Add node_modules, .cache, and .parcel-cache to .gitignore.
+4. Install Parcel: Globally install Parcel with sudo npm install -g parcel.
+5. Install Dependencies: Install React, React DOM, React Redux, and React 6. Bootstrap with npm install --save react react-dom react-redux react-bootstrap.
+6. Configure Index.html: Link index.html to index.jsx for application entry point.
+7. Build Project: Use Parcel to build the project with parcel src/index.html.
+8. Deploy to Netlify: Deploy automatically to Netlify using Parcel, ensuring updates reflect live.
