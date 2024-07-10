@@ -94,11 +94,8 @@ export const MainView = () => {
       </Row>
       <p className="mt-auto mb-3">
         Designed and developed by:{" "}
-        <a
-          href="https://leanneduyck.github.io/portfolio-website/index.html"
-          target="_blank"
-        >
-          Leanne Duyck
+        <a href="https://portfolio-leanneduyck.vercel.app/" target="_blank">
+          <u>Leanne Duyck</u>
         </a>
       </p>
     </Container>
