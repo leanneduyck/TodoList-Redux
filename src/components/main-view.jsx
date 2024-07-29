@@ -95,7 +95,7 @@ export const MainView = () => {
       <p className="mt-auto mb-3">
         Designed and developed by:{" "}
         <a
-          href="https://portfolio-leanneduyck.vercel.app/"
+          href="https://leanneduyck.vercel.app/"
           target="_blank"
           style={{ textDecoration: "none" }}
         >
